@@ -123,6 +123,13 @@ YBIBImageData *data1 = [YBIBImageData new];
 data1.imageURL = ...;
 data1.projectiveView = ...;
 
+//网络图片和本地图片同时设置  imageURL >  imageName
+//只有当imageURL 为空时才  imageName
+YBIBImageData *data3 = [YBIBImageData new];
+data3.imageURL = ...;
+data3.imageName = ...;
+data3.projectiveView = ...;
+
 // 视频
 YBIBVideoData *data2 = [YBIBVideoData new];
 data2.videoURL = ...;
