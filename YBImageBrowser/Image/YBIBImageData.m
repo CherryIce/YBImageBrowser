@@ -74,10 +74,10 @@ static dispatch_queue_t YBIBImageProcessingQueue(void) {
         self.loadingStatus = self.loadingStatus;
         return;
     }
-    
+    //优先级 imageURL > imageName
     if (self.originImage) {
         [self loadOriginImage];
-    } else if (self.imageName || self.imagePath || self.imageData) {
+    } else if ((self.imageName || self.imagePath || self.imageData) && (!self.imageURL || self.imageURL.absoluteString.length == 0)) {
         [self loadYBImage];
     } else if (self.image) {
         [self loadImageBlock];
