@@ -195,6 +195,9 @@
 }
 
 - (void)hide {
+    if (self.hideBlock) {
+        self.hideBlock();
+    }
     __kindof UIView *startView;
     __kindof UIView *endView;
     UICollectionViewCell<YBIBCellProtocol> *cell = (UICollectionViewCell<YBIBCellProtocol> *)self.collectionView.centerCell;

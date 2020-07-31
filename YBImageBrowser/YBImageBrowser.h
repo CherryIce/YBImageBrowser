@@ -45,6 +45,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)hide;
 
+/**
+ 消失回调
+ */
+@property (nonatomic , copy) void(^hideBlock)(void);
+
 /// 当前页码
 @property (nonatomic, assign) NSInteger currentPage;
 

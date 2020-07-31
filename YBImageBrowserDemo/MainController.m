@@ -13,6 +13,7 @@
 #import "TestDController.h"
 #import "TestEController.h"
 #import "TestFController.h"
+#import "TestGViewController.h"
 
 @interface MainController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -27,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"YBImageBrowser";
-    _controllers = @[TestAController.self, TestBController.self, TestCController.self, TestDController.self, TestFController.self, TestEController.self];
+    _controllers = @[TestAController.self, TestBController.self, TestCController.self, TestDController.self, TestFController.self, TestEController.self ,TestGViewController.self];
     [self.view addSubview:self.tableView];
 }
 

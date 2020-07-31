@@ -70,6 +70,8 @@
 		23F26AD222D7208700C27C21 /* YBIBVideoActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F26AD122D7208700C27C21 /* YBIBVideoActionBar.m */; };
 		23F5A00D23161D51003F0FAE /* YBIBDefaultWebImageMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5A00C23161D51003F0FAE /* YBIBDefaultWebImageMediator.m */; };
 		23FF103622F6B6FC0091331F /* TestFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FF103522F6B6FC0091331F /* TestFController.m */; };
+		4648E54924D3B9BD00F14C8F /* TestGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648E54824D3B9BD00F14C8F /* TestGViewController.m */; };
+		4648E54C24D3B9FA00F14C8F /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648E54B24D3B9FA00F14C8F /* SMViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +221,10 @@
 		23FC590B23B05EBD00F42054 /* YBIBVideoCell+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YBIBVideoCell+Internal.h"; sourceTree = "<group>"; };
 		23FF103422F6B6FC0091331F /* TestFController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFController.h; sourceTree = "<group>"; };
 		23FF103522F6B6FC0091331F /* TestFController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFController.m; sourceTree = "<group>"; };
+		4648E54724D3B9BD00F14C8F /* TestGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGViewController.h; sourceTree = "<group>"; };
+		4648E54824D3B9BD00F14C8F /* TestGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGViewController.m; sourceTree = "<group>"; };
+		4648E54A24D3B9FA00F14C8F /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
+		4648E54B24D3B9FA00F14C8F /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
 		97542AA3FE46C41411B15C5D /* Pods_YBImageBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBImageBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7455F1D491BFCA198544CA1 /* Pods-YBImageBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBImageBrowserDemo.debug.xcconfig"; path = "Target Support Files/Pods-YBImageBrowserDemo/Pods-YBImageBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2A1E10DD2C568E5493980E0 /* Pods-YBImageBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBImageBrowserDemo.release.xcconfig"; path = "Target Support Files/Pods-YBImageBrowserDemo/Pods-YBImageBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -443,6 +449,7 @@
 				23CC34E522DC49CC0037018B /* 图片显示预处理（例添加水印） */,
 				23FF103322F6B6BF0091331F /* 用代理配置数据源（以相册为例） */,
 				23CC34D822DC25450037018B /* 添加到控制器使用（以相册为例） */,
+				4648E54624D3B95C00F14C8F /* 包一层控制器试试 */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -553,6 +560,17 @@
 				97542AA3FE46C41411B15C5D /* Pods_YBImageBrowserDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4648E54624D3B95C00F14C8F /* 包一层控制器试试 */ = {
+			isa = PBXGroup;
+			children = (
+				4648E54724D3B9BD00F14C8F /* TestGViewController.h */,
+				4648E54824D3B9BD00F14C8F /* TestGViewController.m */,
+				4648E54A24D3B9FA00F14C8F /* SMViewController.h */,
+				4648E54B24D3B9FA00F14C8F /* SMViewController.m */,
+			);
+			path = "包一层控制器试试";
 			sourceTree = "<group>";
 		};
 		9A38309A58D899EE4318D182 /* Pods */ = {
@@ -773,7 +791,9 @@
 				23FF103622F6B6FC0091331F /* TestFController.m in Sources */,
 				23A484A1233CC0500017FA5D /* NSObject+YBImageBrowser.m in Sources */,
 				23ABA2AF22D0BAB700535F6A /* YBIBCopywriter.m in Sources */,
+				4648E54C24D3B9FA00F14C8F /* SMViewController.m in Sources */,
 				23C282F222D5F4540084E9E6 /* YBIBVideoCell.m in Sources */,
+				4648E54924D3B9BD00F14C8F /* TestGViewController.m in Sources */,
 				23ABA2A922D0BAB700535F6A /* YBIBToastView.m in Sources */,
 				23CC34E122DC2D6D0037018B /* BaseListCell.m in Sources */,
 				23ABA2AC22D0BAB700535F6A /* YBIBCollectionViewLayout.m in Sources */,
