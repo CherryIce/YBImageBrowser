@@ -72,6 +72,9 @@
 		23FF103622F6B6FC0091331F /* TestFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FF103522F6B6FC0091331F /* TestFController.m */; };
 		4648E54924D3B9BD00F14C8F /* TestGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648E54824D3B9BD00F14C8F /* TestGViewController.m */; };
 		4648E54C24D3B9FA00F14C8F /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648E54B24D3B9FA00F14C8F /* SMViewController.m */; };
+		46BA34B624DA95BC00B3F211 /* SMPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BA34B524DA95BC00B3F211 /* SMPresentTransition.m */; };
+		46BA34B924DA967F00B3F211 /* SMDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BA34B824DA967F00B3F211 /* SMDismissTransition.m */; };
+		46BA34BC24DA9BDE00B3F211 /* UIViewController+Transtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BA34BB24DA9BDE00B3F211 /* UIViewController+Transtion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +228,12 @@
 		4648E54824D3B9BD00F14C8F /* TestGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGViewController.m; sourceTree = "<group>"; };
 		4648E54A24D3B9FA00F14C8F /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
 		4648E54B24D3B9FA00F14C8F /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+		46BA34B424DA95BC00B3F211 /* SMPresentTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPresentTransition.h; sourceTree = "<group>"; };
+		46BA34B524DA95BC00B3F211 /* SMPresentTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPresentTransition.m; sourceTree = "<group>"; };
+		46BA34B724DA967F00B3F211 /* SMDismissTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMDismissTransition.h; sourceTree = "<group>"; };
+		46BA34B824DA967F00B3F211 /* SMDismissTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMDismissTransition.m; sourceTree = "<group>"; };
+		46BA34BA24DA9BDE00B3F211 /* UIViewController+Transtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Transtion.h"; sourceTree = "<group>"; };
+		46BA34BB24DA9BDE00B3F211 /* UIViewController+Transtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Transtion.m"; sourceTree = "<group>"; };
 		97542AA3FE46C41411B15C5D /* Pods_YBImageBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBImageBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7455F1D491BFCA198544CA1 /* Pods-YBImageBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBImageBrowserDemo.debug.xcconfig"; path = "Target Support Files/Pods-YBImageBrowserDemo/Pods-YBImageBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2A1E10DD2C568E5493980E0 /* Pods-YBImageBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBImageBrowserDemo.release.xcconfig"; path = "Target Support Files/Pods-YBImageBrowserDemo/Pods-YBImageBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -569,6 +578,12 @@
 				4648E54824D3B9BD00F14C8F /* TestGViewController.m */,
 				4648E54A24D3B9FA00F14C8F /* SMViewController.h */,
 				4648E54B24D3B9FA00F14C8F /* SMViewController.m */,
+				46BA34BA24DA9BDE00B3F211 /* UIViewController+Transtion.h */,
+				46BA34BB24DA9BDE00B3F211 /* UIViewController+Transtion.m */,
+				46BA34B424DA95BC00B3F211 /* SMPresentTransition.h */,
+				46BA34B524DA95BC00B3F211 /* SMPresentTransition.m */,
+				46BA34B724DA967F00B3F211 /* SMDismissTransition.h */,
+				46BA34B824DA967F00B3F211 /* SMDismissTransition.m */,
 			);
 			path = "包一层控制器试试";
 			sourceTree = "<group>";
@@ -774,6 +789,7 @@
 				23F26ACF22D7206900C27C21 /* YBIBVideoTopBar.m in Sources */,
 				23B3270F22A768F6008BFF5D /* main.m in Sources */,
 				23ABA2BD22D0BAB700535F6A /* YBImageBrowser.m in Sources */,
+				46BA34B624DA95BC00B3F211 /* SMPresentTransition.m in Sources */,
 				23CC34ED22DC59190037018B /* TestBController.m in Sources */,
 				23CC34EA22DC58F10037018B /* TestAController.m in Sources */,
 				23ABA2A822D0BAB700535F6A /* YBIBLoadingView.m in Sources */,
@@ -806,8 +822,10 @@
 				23B3270122A768F4008BFF5D /* AppDelegate.m in Sources */,
 				23ABA2BA22D0BAB700535F6A /* YBIBInteractionProfile.m in Sources */,
 				23CC350722DC7CAF0037018B /* TestCustomCell.m in Sources */,
+				46BA34BC24DA9BDE00B3F211 /* UIViewController+Transtion.m in Sources */,
 				23ABA2B822D0BAB700535F6A /* YBIBImageLayout.m in Sources */,
 				23CC350B22DC7CC00037018B /* TestCustomData.m in Sources */,
+				46BA34B924DA967F00B3F211 /* SMDismissTransition.m in Sources */,
 				23ABA2B922D0BAB700535F6A /* YBIBImageScrollView.m in Sources */,
 				23ABA2AE22D0BAB700535F6A /* YBIBScreenRotationHandler.m in Sources */,
 				23F5A00D23161D51003F0FAE /* YBIBDefaultWebImageMediator.m in Sources */,

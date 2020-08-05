@@ -16,9 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
-    self.modalPresentationStyle = UIModalPresentationFullScreen;
-    
     /*
      用控制器包装处理起来有些麻烦 而且效果好像不太理想
      */
@@ -40,8 +37,15 @@
     [browser showToView:self.view containerSize:size];
     
     __weak typeof(self) weakSelf = self;
+    __weak typeof(browser) weakBrowser = browser;
     browser.hideBlock = ^{
-        [weakSelf dismissViewControllerAnimated:NO completion:nil];
+        if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(closeImageBrowser:index:data:)]) {
+            [weakSelf.delegate closeImageBrowser:weakBrowser index:weakBrowser.currentPage data:weakBrowser.dataSourceArray[weakBrowser.currentPage]];
+        }
+        //[weakSelf dismissViewControllerAnimated:NO completion:nil];
+        [weakSelf dismissSMViewControllerAnimated:YES completion:^{
+            
+        }];
     };
 }
 
@@ -67,3 +71,4 @@
 - (void)yb_imageBrowser:(YBImageBrowser *)imageBrowser endTransitioningWithIsShow:(BOOL)isShow {}
 
 @end
+

@@ -12,6 +12,8 @@
 #import "YBIBVideoData.h"
 #import "YBIBUtilities.h"
 
+#import "UIViewController+Transtion.h"
+
 @protocol SMViewControllerDelegate <NSObject>
 
 @optional
@@ -20,21 +22,22 @@
 
 - (void)cc_imageBrowser:(YBImageBrowser *_Nullable)imageBrowser respondsToLongPressWithData:(id<YBIBDataProtocol>_Nullable)data;
 
-@end
+- (void) closeImageBrowser:(YBImageBrowser *_Nullable)imageBrowser index:(NSInteger)index data:(id<YBIBDataProtocol>_Nullable)data;
 
-NS_ASSUME_NONNULL_BEGIN
+@end
 
 @interface SMViewController : UIViewController
 
-@property (nonatomic, copy) NSArray<PHAsset *> *imagePHAssets;
+@property (nonatomic, copy) NSArray<PHAsset *> * _Nonnull imagePHAssets;
 
 // 数据源数组
-@property (nonatomic, copy) NSArray<id<YBIBDataProtocol>> *dataSourceArray;
+@property (nonatomic, copy) NSArray<id<YBIBDataProtocol>> * _Nullable dataSourceArray;
 // 当前页码
 @property (nonatomic, assign) NSInteger currentPage;
 
-@property (nonatomic , weak) id<SMViewControllerDelegate>delegate;
+@property (nonatomic , weak) id<SMViewControllerDelegate> _Nullable delegate;
+
+@property (nonatomic , strong , nullable)    UIView * presentingImageView;
 
 @end
 
-NS_ASSUME_NONNULL_END

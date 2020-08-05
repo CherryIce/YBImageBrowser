@@ -38,7 +38,14 @@
     SMViewController *browser = [SMViewController new];
     browser.dataSourceArray = datas;
     browser.currentPage = index;
-    [self presentViewController:browser animated:YES completion:nil];
+    //[self presentViewController:browser animated:YES completion:nil];
+    
+    UIView * v = [self viewAtIndex:index];
+    browser.presentingImageView = v;
+    
+    [self presentSMViewController:browser animated:YES completion:^{
+        
+    }];
 }
 
 - (NSArray *) gainArray {
